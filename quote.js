@@ -3,7 +3,7 @@ $(".button").click(function () {
   var authorName = document.querySelector("#authorText");
   $.ajax({
     method: "GET",
-    url: "https://api.quotable.io/random?maxLength=150&tags=love",
+    url: "https://api.quotable.io/random?minLength=50&maxLength=200&tags=love",
     success: function (result) {
       console.log(result["content"]);
       textContent.innerHTML =
